@@ -4,7 +4,9 @@
 AUTHOR = 'Chris Morgan'
 SITENAME = 'wachunga.com'
 SITEURL = 'http://wachunga.com'
-RELATIVE_URLS = True
+RELATIVE_URLS = False
+
+TAG_LINE='Python hacker in the financial markets.'
 
 TIMEZONE = 'Europe/Paris'
 
