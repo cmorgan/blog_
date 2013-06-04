@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content_title %}{% endblock %}
+{% block content %}
+<div class="container home-articles">
+    <div class="row">
+        <div class="span10 offset1">
+            <h1>Articles:</h1>
+            <ul class="articles">
+                {% for article in articles_page.object_list %}
+                <li><span class="date">{{ article.locale_date }}</span> -
+                    <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% include 'pagination.html' %}
+        </div>
+    </div>
+    {#
+    {% if not articles_page.has_previous() %}
+    <div class="row">
+        <div class="span10 offset1">
+            <h1>Projects:</h1>
+            <ul class="projects">
+                {% for name, link, desc in PROJECTS %}
+                <li><a href="{{ link }}">{{ name }}</a> - {{ desc }}</li>
+                {% endfor %}
+            </ul>
+
+            <br />
+
+            <p>And more others on my <a href="{{ GITHUB }}">Github</a>.</p>
+        </div>
+    </div>
+    {% endif %}
+    #}
+</div>
+{% endblock content %}

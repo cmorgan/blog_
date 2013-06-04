@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "Merriweather";
+    src: url("../Merriweather-Regular.otf");
+}
+
+@font-face {
+    font-family: "Inconsolata";
+    src: url("../Inconsolata.otf");
+}
+
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/Merriweather-Light-webfont.eot');
+    src: url('../fonts/Merriweather-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Merriweather-Light-webfont.woff') format('woff'),
+         url('../fonts/Merriweather-Light-webfont.ttf') format('truetype'),
+         url('../fonts/Merriweather-Light-webfont.svg#MerriweatherLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-weight: normal;
+    color: #483318;
+    margin: 20px auto 0;
+    font-size: 16px;
+    line-height: 1.5em;
+    font-family: Merriweather, Georgia, serif;
+    font: 17px/25px 'Merriweather', serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin-top: 20px;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    color: #222;
+}
+
+li {
+    line-height: 24px;
+}
+
+h1 {
+    font-size: 1.75em;
+}
+
+h2 {
+    font-size: 1.50em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+a:visited {
+    color: #441d7b;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: #146894;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.page-title {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.page-title a {
+    color: black;
+    font-size: 2px;
+    font-size: 1.75em;
+    color: #332411;
+}
+
+.page-title a:hover {
+    text-decoration: none;
+}
+
+.home-articles ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.paginator {
+    margin-top: 20px;
+}
+
+.article h1 {
+    font-family: Merriweather, Georgia, serif;
+    color: #332411;
+    margin-bottom: .25em;
+}
+
+.article h1 > a {
+    color: #332411;
+}
+
+
+.comments {
+    margin-top: 20px;
+}
+
+.comments h2 {
+    font-size: 1.50em;
+}
+
+.project-table tr td.name {
+    width:185px;
+}
+
+table.docutils {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 0px;
+}
+
+table.docutils th,
+table.docutils td {
+    border: 1px solid #aaa;
+}
+
+.post-info {
+    font-size: 13px;
+}
+
+.post-info p {
+    margin: 0px;
+}
+
+.tags a {
+    margin-left: 5px;
+}
+
+pre {
+    font-size: 12px;
+    line-height: 13px;
+}
+
+.note {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+.note p.first {
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+}

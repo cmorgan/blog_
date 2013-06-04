@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block header %}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="span10 offset1">
+            <div class="basic-desc" style="margin-top: 20px">
+                <strong>Name: </strong> Chris Morgan<br />
+                <strong>Location: </strong>London, UK<br />
+                {# <strong>GitHub: </strong><a href="https://github.com/wachunga">github.com/wachunga</a><br /> #}
+                {# <strong>CV: </strong><a href="http://kaleidos.net/A5694F/">http://kaleidos.net/A5694F/</a><br /> #}
+            </div>
+
+            <img src="static/images/squares.jpg" width="300"></img>
+
+            <h3>Small description:</h3>
+            <p>Python hacker.</p>
+            <br />
+            <h3>Skills & Expertise</h3>
+            <p><strong>Working daily with: </strong> Python2, Python3, NumPy,
+            Pandas, PostgreSQL, Redis, MongoDB, Linux, Git, ZeroMQ, tornadoweb, nginx</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

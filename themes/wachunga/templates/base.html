@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
+        <meta charset="utf-8" />
+        <link href="static/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygment.css" type="text/css" />
+        <link rel="stylesheet" href="{{ SITEURL }}/theme/css/wachunga.css" type="text/css" />
+        {% if FEED_ALL_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
+        {% endif %}
+        {% if FEED_ALL_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+        {% endif %}
+    </head>
+    <body id="index" class="home">
+        {% include 'github.html' %}
+        {% block header %}
+        <div class="header container">
+            <div class="row">
+                <div class="clearfix span2 offset1">
+                      <img class=pull-left" src="static/images/squares.jpg" width="150"></img>
+                </div>
+                <div class="span8">
+                    <div class="page-title">
+                      <a href="{{ SITEURL }}/">{{ AUTHOR }} / {{ SITENAME }}</a></a>
+                    <p>Python hacker and finance enthusiast.</p>
+                    <p>To learn more, please go <a class="about-link" href="/about.html">here</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endblock %}
+
+        {% block content %}
+        {% endblock %}
+
+        <div class="footer"></div>
+        {% include 'analytics.html' %}
+        {% include 'piwik.html' %}
+        {% include 'disqus_script.html' %}
+    </body>
+</html>
